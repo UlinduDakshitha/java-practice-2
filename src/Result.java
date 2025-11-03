@@ -6,6 +6,7 @@ public class Result {
 
         Students[] students=new Students[10];
 
+
         for(int i=0;i<10;i++){
 
             System.out.print("Enter your name:");
@@ -50,6 +51,25 @@ public class Result {
             }
 
         }
+        showResults(students);
         
     }
+
+    public  static void showResults(Students[] ar){
+
+        for(int i=0;i<10;i++){
+
+            if(ar[i].getMarks()>75){
+                System.out.println("A");
+            } else if (ar[i].getMarks()>=65) {
+                System.out.println("B");
+            } else if (ar[i].getMarks()>=55) {
+                System.out.println("C");
+            }
+            else {
+                System.out.println("Fail");
+            }
+        }
+    }
+
 }

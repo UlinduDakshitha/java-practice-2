@@ -26,4 +26,8 @@ private double marks;
     public void setMarks(double marks) {
         this.marks = marks;
     }
+
+    public double calculateGrade(){
+        return 0;
+    }
 }

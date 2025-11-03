@@ -1,4 +1,4 @@
-public class Postgraduate {
+public class Postgraduate extends Undergraduate {
     private String reSearchTopic;
 
     public String getReSearchTopic() {
@@ -7,5 +7,10 @@ public class Postgraduate {
 
     public void setReSearchTopic(String reSearchTopic) {
         this.reSearchTopic = reSearchTopic;
+    }
+
+    @Override
+    public double calculateGrade() {
+         return getMarks();
     }
 }

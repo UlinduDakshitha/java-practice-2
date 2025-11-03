@@ -1,4 +1,4 @@
-public class Diploma {
+public class Diploma extends Postgraduate {
     private int duration;
 
     public int getDuration() {
@@ -7,5 +7,10 @@ public class Diploma {
 
     public void setDuration(int duration) {
         this.duration = duration;
+    }
+
+    @Override
+    public double calculateGrade() {
+         return getMarks();
     }
 }

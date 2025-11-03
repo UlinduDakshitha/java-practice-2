@@ -28,6 +28,25 @@ public class Result {
                     undergraduate.setRegNo(regNo);
                     undergraduate.setMarks(marks);
                     undergraduate.setCourseName("Computer science");
+                    students[i]=undergraduate;
+
+                case "Postgraduate":
+                    Postgraduate postgraduate=new Postgraduate();
+                    postgraduate.setName(name);
+                    postgraduate.setRegNo(regNo);
+                    postgraduate.setMarks(marks);
+                    postgraduate.setReSearchTopic("computer");
+                    students[i]=postgraduate;
+
+
+                case "Diploma":
+                    Diploma diploma=new Diploma();
+                    diploma.setName(name);
+                    diploma.setRegNo(regNo);
+                    diploma.setMarks(marks);
+                    diploma.setDuration(4);
+                    students[i]=diploma;
+
             }
 
         }

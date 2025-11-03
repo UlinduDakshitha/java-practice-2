@@ -29,6 +29,7 @@ public class Result {
                     undergraduate.setRegNo(regNo);
                     undergraduate.setMarks(marks);
                     undergraduate.setCourseName("Computer science");
+                    undergraduate.calculateGrade();
                     students[i]=undergraduate;
 
                 case "Postgraduate":
@@ -37,6 +38,7 @@ public class Result {
                     postgraduate.setRegNo(regNo);
                     postgraduate.setMarks(marks);
                     postgraduate.setReSearchTopic("computer");
+                    postgraduate.calculateGrade();
                     students[i]=postgraduate;
 
 
@@ -46,6 +48,7 @@ public class Result {
                     diploma.setRegNo(regNo);
                     diploma.setMarks(marks);
                     diploma.setDuration(4);
+                    diploma.calculateGrade();
                     students[i]=diploma;
 
             }

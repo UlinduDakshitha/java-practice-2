@@ -8,4 +8,9 @@ public class Loan extends Current {
     public void setLoanAmount(double loanAmount) {
         this.loanAmount = loanAmount;
     }
+
+
+    public double updateAccountBalance() {
+         return getBalance()-loanAmount*0.1;
+    }
 }

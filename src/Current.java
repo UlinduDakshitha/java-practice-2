@@ -8,4 +8,9 @@ public class Current extends Savings {
     public void setOverDraftLimit(double overDraftLimit) {
         this.overDraftLimit = overDraftLimit;
     }
+
+
+    public double updateAccountBalance() {
+         return getBalance()-overDraftLimit;
+    }
 }

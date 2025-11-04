@@ -31,6 +31,11 @@ public class AllAccounts {
                     double rate=sc.nextDouble();
                     savings.setInterestRate(rate);
                     accounts[i]=savings;
+                    System.out.print(accountNumber);
+                    System.out.print(name);
+                    System.out.print(balance);
+                    System.out.print(rate);
+                    System.out.print("Update balance"+ savings.updateAccountBalance());
 
                 case "Current":
                     Current current=new Current();
@@ -41,6 +46,11 @@ public class AllAccounts {
                     double draft= sc.nextDouble();
                     current.setOverDraftLimit(draft);
                     accounts[i]=current;
+                    System.out.print(accountNumber);
+                    System.out.print(name);
+                    System.out.print(balance);
+                    System.out.print(draft);
+                    System.out.print("update balance"+current.updateAccountBalance());
 
                 case "Loan":
                     Loan loan =new Loan();
@@ -51,9 +61,15 @@ public class AllAccounts {
                     double loanAmount=sc.nextDouble();
                     loan.setLoanAmount(loanAmount);
                     accounts[i]=loan;
+                    System.out.print(accountNumber);
+                    System.out.print(name);
+                    System.out.print(balance);
+                    System.out.print(loanAmount);
+                    System.out.print("update balance"+loan.updateAccountBalance());
             }
         }
 
 
     }
+
 }

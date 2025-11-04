@@ -8,5 +8,7 @@ public class Savings extends Accounts {
     public void setInterestRate(double interestRate) {
         this.interestRate = interestRate;
     }
-
+ public double updateAccountBalance(){
+        return interestRate+getBalance();
+ }
 }

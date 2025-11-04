@@ -11,4 +11,5 @@ public class Savings extends Accounts {
  public double updateAccountBalance(){
         return interestRate+getBalance();
  }
+
 }
